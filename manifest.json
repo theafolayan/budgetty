@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Budgetty",
+    "version": "1.00",
+    "description": " A Light Weight Extension For Chrome To Help You Monitor How You Spend Your Budget. Kindly Rate 5 start to support the makers",
+    "icons": {
+        "128": "budgetty128.png",
+        "48": "budgetty48.png",
+        "16": "budgetty16.png"
+    },
+    "browser_action":{
+        "default_icon": "budgetty16.png",
+        "default_popup": "main.html"
+    },
+    "options_page": "options.html" ,
+    "background":{
+        "scripts": ["eventPage.js"],
+        "persistent": false
+        
+    },
+    "permissions":[
+        "storage",
+    "notifications",
+    "contextMenus"
+]
+    
+}
